@@ -1,0 +1,420 @@
+<!--Template Name: Medistore
+File Name: register.html
+Author Name: ThemeVault
+Author URI: http://www.themevault.net/
+License URI: http://www.themevault.net/license/-->
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
+        <link rel="icon" href="images/favicon.png"/>
+        <title>MediStore</title>
+        <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css"/>
+        <link rel="stylesheet" type="text/css" href="css/style.css"/> 
+        <link rel="stylesheet" type="text/css" href="font-awesome/css/font-awesome.min.css"/>
+        <script src="js/jquery.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/custom.js"></script>
+    </head>
+    <body>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 col-sm-4 col-xs-4" id="logo" >
+                    <a href="home.html" class="logo-text">
+                        Medi<span style="color:#39BAF0; font-size:40px">STORE</span>
+                    </a>		
+                </div>
+                <div class="col-md-2 col-sm-12 col-xs-12" style="display:none " id="navbar_hide" >
+                    <nav  role="navigation" class="navbar navbar-inverse">
+                        <a href="home.html" style="float: left" class="logo-text">
+                            Medi<span style="color:#39BAF0; font-size:40px">STORE</span>
+                        </a>
+                        <div id="nav">
+                            <div class="navbar-header">
+                                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar" style="background: #8EBE08; border: none; margin-right: 0">
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                </button>
+                            </div>
+                            <div class="collapse navbar-collapse" id="myNavbar">
+                                <ul class="nav navbar-nav site_nav_menu1"  >
+                                    <li class="first " ><a href="home.html">Home</a></li>
+                                    <li><a href="#">About us</a></li>
+                                    <li><a href="#">Guarantee</a></li>
+                                    <li><a href="#">Disclaimer</a></li>
+                                    <li><a href="#">Shipping & Payment</a></li>
+                                    <li><a href="#">Privacy Policy</a></li>
+                                    <li><a href="#">Terms & Conditions</a></li>
+                                    <li><a href="#">Contact Us</a></li>
+                                    <li><a href="#">Site Map</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </nav>
+                </div>
+                <div class="col-md-4 col-md-offset-4 col-sm-offset-2  col-sm-6 col-xs-12" >
+                    <div id="top_right">
+                        <div id="cart">
+                            <div class="text">
+                                <div class="img">
+                                    <a href="cart.html"> <img class="img-responsive" src="images/cart.png" alt="" title="" width="26" height="27" /></a>
+                                </div><span>Your cart:</span><span class="cart_total">€0.00</span><span class="cart_items">(0 items)</span>
+                            </div> 
+                        </div>
+                        <div id="bottom_right">
+                            <div class="row">
+                                <div class="col-md-6 col-xs-6 wd_auto">
+                                    <div class="left">
+                                        <div class="login">
+                                            <a class="btn btn-default reg_button" href="login.html">Login</a> 
+                                            <a class="btn btn-default reg_button" href="register.html">Signup</a>
+                                        </div>			
+                                    </div>
+                                </div> 
+                                <div class="dropdown-bn wd-33 col-md-6 remove_PL col-xs-6">
+                                    <div class="row">
+                                        <div class="pl-0 col-md-6 col-xs-6">
+
+                                            <div class="dropdown btn-group">
+                                                <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">language
+                                                    <span class="caret"></span></button>
+                                                <ul class="dropdown-menu">
+                                                    <li><a href="#">English</a></li>
+                                                    <li><a href="#">French</a></li>
+                                                    <li><a href="#">German</a></li>
+                                                    <li><a href="#">Dutch</a></li>
+                                                    <li><a href="#">Swedish</a></li>
+                                                    <li><a href="#">Danish</a></li>
+                                                    <li><a href="#">Portuguese</a></li>
+                                                    <li><a href="#">Finish</a></li>
+                                                    <li><a href="#">German</a></li><li><a href="#">Norwegian</a></li>
+
+                                                </ul>
+                                            </div>
+                                        </div>
+
+                                        <div class="pl_0 col-md-6 col-xs-6">
+                                            <div class="dropdown btn-group">
+                                                <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">currency
+                                                    <span class="caret"></span></button>
+                                                <ul class="dropdown-menu">
+                                                    <li><a href="#">U.S. Dollar</a></li>
+                                                    <li><a href="#">Euro</a></li>
+                                                    <li><a href="#">Pounds Sterling</a></l>
+                                                </ul>
+                                            </div>
+                                        </div>
+
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div> 
+        <div class="container-fluid bg-color">
+            <div class="row">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12 col-xs-12">
+                            <nav  role="navigation" class="navbar navbar-inverse" id="nav_show">
+                                <div id="nav">
+                                    <div class="navbar-header">
+                                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                                            <span class="icon-bar"></span>
+                                            <span class="icon-bar"></span>
+                                            <span class="icon-bar"></span>
+                                        </button>
+
+                                    </div>
+                                    <div class="collapse navbar-collapse" id="myNavbar">
+                                        <ul class="nav navbar-nav site_nav_menu1"  >
+                                            <li class="first "><a href="home.html">Home</a></li>
+                                            <li><a href="#">About us</a></li>
+                                            <li><a href="#">Guarantee</a></li>
+                                            <li><a href="#">Disclaimer</a></li>
+                                            <li><a href="#">Shipping & Payment</a></li>
+                                            <li><a href="#">Privacy Policy</a></li>
+                                            <li><a href="#">Terms & Conditions</a></li>
+                                            <li><a href="#">Contact Us</a></li>
+                                            <li><a href="#">Site Map</a></li>
+                                        </ul>
+
+                                    </div>
+                                </div>
+                            </nav>
+                        </div>
+                    </div> 
+
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row" id="search_manu" style="margin-top: 10px">
+                <div class="col-md-6 col-xs-12">
+                    <form  name="quick_find">
+                        <div class="form-group">
+                            <div class="input-group">
+                                <input type="text" placeholder="Enter search keywords here" class="form-control input-lg" id="inputGroup"/>
+                                <span class="input-group-addon">
+                                    <a href="#" style="color:white">Search</a>
+                                </span>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="col-md-6 col-xs-12">
+
+                    <form  name="manufacturers"> 
+                        <div class="form-group">
+                            <div class="">
+                                <select  style="font-size: 14px; background: #EAEAEA; border: none;" name="manufacturers_id"  size="1" class="input-lg form-control arrow-hide date_class">
+                                    <option value="" selected="selected">Please Select manufacturers</option>
+                                    <option>lorem</option>
+                                    <option>lorem</option>
+                                    <option>lorem</option>
+                                    <option>lorem</option>
+                                </select>
+
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <div id="site_content">
+            <div class="container">
+                <div class="row"><aside class="col-sm-3 hidden-xs" id="column-left">
+                        <div class="list-group">
+                            <a class="list-group-item" href="login.html">Login</a> 
+                            <a class="list-group-item" href="#">Register</a> 
+                            <a class="list-group-item" href="#">Forgotten Password</a>
+                            <a class="list-group-item" href="#">My Account</a>
+                            <a class="list-group-item" href="#">Address Book</a>
+                            <a class="list-group-item" href="#">Wish List</a> 
+                            <a class="list-group-item" href="#">Order History</a> 
+                            <a class="list-group-item" href="#">Downloads</a>
+                            <a class="list-group-item" href="#">Recurring payments</a>
+                            <a class="list-group-item" href="#">Reward Points</a> 
+                            <a class="list-group-item" href="#">Returns</a> 
+                            <a class="list-group-item" href="#">Transactions</a> 
+                            <a class="list-group-item" href="#">Newsletter</a>
+                        </div>
+                    </aside>
+                    <div class="col-sm-9" id="content">            <div class="breadcrumbs">
+                            <a href="home.html"><i class="fa fa-home"></i></a>
+                            <a href="#">Register</a>
+                        </div>
+                        <h1>My Account Information</h1>
+                        <p> <small><strong class="define_note"></strong></small>If you already have an account with us, please login at the 
+                            <a href="login.html">login page</a>.</p>
+                        <form class="form-horizontal">
+                            <div class="contentText">  
+                                <fieldset id="account">
+                                    <h1>Your Personal Details</h1>
+                                    <div style="display: none;" class="form-group required">
+                                        <label class="col-sm-2 control-label">Customer Group</label>
+                                        <div class="col-sm-10">
+                                            <div class="radio">
+                                                <label>
+                                                    <input type="radio" checked="checked" value="1" name="customer_group_id">
+                                                    Default</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="form-group required">
+                                        <label for="input-firstname" class="col-sm-2 control-label">First Name</label>
+                                        <div class="col-sm-10">
+                                            <input type="text" class="form-control" id="input-firstname" placeholder="First Name" value="" name="firstname">
+                                        </div>
+                                    </div>
+                                    <div class="form-group required">
+                                        <label for="input-lastname" class="col-sm-2 control-label">Last Name</label>
+                                        <div class="col-sm-10">
+                                            <input type="text" class="form-control" id="input-lastname" placeholder="Last Name" value="" name="lastname">
+                                        </div>
+                                    </div>
+                                    <div class="form-group required">
+                                        <label for="input-email" class="col-sm-2 control-label">E-Mail</label>
+                                        <div class="col-sm-10">
+                                            <input type="email" class="form-control" id="input-email" placeholder="E-Mail" value="" name="email">
+                                        </div>
+                                    </div>
+                                    <div class="form-group required">
+                                        <label for="input-telephone" class="col-sm-2 control-label">Telephone</label>
+                                        <div class="col-sm-10">
+                                            <input type="tel" class="form-control" id="input-telephone" placeholder="Telephone" value="" name="telephone">
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="input-fax" class="col-sm-2 control-label">Fax</label>
+                                        <div class="col-sm-10">
+                                            <input type="text" class="form-control" id="input-fax" placeholder="Fax" value="" name="fax">
+                                        </div>
+                                    </div>
+                                </fieldset>
+                                <fieldset id="address">
+                                    <h1>Your Address</h1>
+                                    <div class="form-group">
+                                        <label for="input-company" class="col-sm-2 control-label">Company</label>
+                                        <div class="col-sm-10">
+                                            <input type="text" class="form-control" id="input-company" placeholder="Company" value="" name="company">
+                                        </div>
+                                    </div>
+                                    <div class="form-group required">
+                                        <label for="input-address-1" class="col-sm-2 control-label">Address 1</label>
+                                        <div class="col-sm-10">
+                                            <input type="text" class="form-control" id="input-address-1" placeholder="Address 1" value="" name="address_1">
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="input-address-2" class="col-sm-2 control-label">Address 2</label>
+                                        <div class="col-sm-10">
+                                            <input type="text" class="form-control" id="input-address-2" placeholder="Address 2" value="" name="address_2">
+                                        </div>
+                                    </div>
+                                    <div class="form-group required">
+                                        <label for="input-city" class="col-sm-2 control-label">City</label>
+                                        <div class="col-sm-10">
+                                            <input type="text" class="form-control" id="input-city" placeholder="City" value="" name="city">
+                                        </div>
+                                    </div>
+                                    <div class="form-group required">
+                                        <label for="input-postcode" class="col-sm-2 control-label">Post Code</label>
+                                        <div class="col-sm-10">
+                                            <input type="text" class="form-control" id="input-postcode" placeholder="Post Code" value="" name="postcode">
+                                        </div>
+                                    </div>
+                                    <div class="form-group required">
+                                        <label for="input-country" class="col-sm-2 control-label">Country</label>
+                                        <div class="col-sm-10">
+                                            <select class="form-control" id="input-country" name="country_id">
+                                                <option value=""> --- Please Select --- </option>
+                                                <option value="244">India</option>
+                                                <option value="1">Afghanistan</option>
+                                                <option value="2">Albania</option>
+                                                <option value="3">Algeria</option>
+                                                <option value="4">American Samoa</option>
+                                                <option value="5">Andorra</option>
+                                                <option value="6">Angola</option>
+                                                <option value="7">Anguilla</option>
+                                                <option value="8">Antarctica</option>
+                                                <option value="9">Antigua and Barbuda</option>
+                                                <option value="10">Argentina</option>
+
+                                            </select> 
+                                        </div>
+                                    </div>
+                                    <div class="form-group required">
+                                        <label for="input-zone" class="col-sm-2 control-label">Region / State</label>
+                                        <div class="col-sm-10">
+                                            <select class="form-control" id="input-zone" name="zone_id">
+                                                <option value=""> --- Please Select --- </option>
+                                                <option value="3513">Aberdeen</option>
+                                                <option value="3514">Aberdeenshire</option>
+                                                <option value="3515">Anglesey</option><option value="3516">Angus</option>
+                                                <option value="3517">Argyll and Bute</option>
+                                                <option value="3518">Bedfordshire</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </fieldset>
+                                <fieldset>
+                                    <h1>Your Password</h1>
+                                    <div class="form-group required">
+                                        <label for="input-password" class="col-sm-2 control-label">Password</label>
+                                        <div class="col-sm-10">
+                                            <input type="password" class="form-control" id="input-password" placeholder="Password" value="" name="password">
+                                        </div>
+                                    </div>
+                                    <div class="form-group required">
+                                        <label for="input-confirm" class="col-sm-2 control-label">Password Confirm</label>
+                                        <div class="col-sm-10">
+                                            <input type="password" class="form-control" id="input-confirm" placeholder="Password Confirm" value="" name="confirm">
+                                        </div>
+                                    </div>
+                                </fieldset>
+                                <fieldset>
+                                    <h1>Newsletter</h1>
+                                    <div class="form-group">
+                                        <label class="col-sm-2 control-label">Subscribe</label>
+                                        <div class="col-sm-10">
+                                            <label class="radio-inline">
+                                                <input type="radio" value="1" name="newsletter">
+                                                Yes</label>
+                                            <label class="radio-inline">
+                                                <input type="radio" checked="checked" value="0" name="newsletter">
+                                                No</label>
+                                        </div>
+                                    </div>
+                                </fieldset>
+                                <div class="buttons">
+                                    <div class="pull-right">I have read and agree to the <a class="agree" href="#"><b>Privacy Policy</b></a>                                                        <input type="checkbox" value="1" name="agree">
+                                        &nbsp;
+                                        <input type="submit" class="btn btn-primary reg_button" value="Continue" >
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="footer1">
+            <div class="container-fluid footer-background">
+                <div class="row">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-2 col-sm-3 col-xs-12 txt-center">
+                                <a href="home.html">
+                                    <span class="logo-text">DRUGSTORE</span>
+                                </a>
+                            </div>
+                            <div class="col-md-7 col-sm-6 col-xs-12">
+                                <div id="footer_menu">
+                                    <a href="home.html">Home</a> | 
+                                    <a href="#">About Us</a> | 
+                                    <a href="#">Disclaimer</a> | 
+                                    <a href="#">Guarantee</a> | 
+                                    <a href="#">Shipping & Payment</a> | 
+                                    <a href="#">Privacy Policy</a> <br class="disable_content" />
+                                    <a href="#">Terms & Conditions</a> | 
+                                    <a href="#">Contact Us</a> | 
+                                    <a href="#">Site Map<span></span></a>
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-sm-3 col-xs-12">
+                                <div id="social_icons" class="pull-right">
+                                    <a href="#" class="btn btn-default reg_button"><i class="fa fa-facebook"></i></a>
+                                    <a href="#" class="btn btn-default reg_button"><i class="fa fa-twitter"></i></a>
+                                    <a href="#" class="btn btn-default reg_button"><i class="fa fa-yahoo"></i></a>
+                                    <a href="#" class="btn btn-default reg_button"><i class="fa fa-envelope"></i></a>
+                                    <a href="#" class="btn btn-default reg_button"><i class="fa fa-linkedin"></i></a>	
+                                </div>
+                            </div>
+                            <div class="col-md-12 col-sm-12 col-xs-12">
+                                <div class="copyright">
+                                    <!--Do not remove Backlink from footer of the template. To remove it you can purchase the Backlink !-->
+                                    © 2017 All right reserved. Designed by
+                                    <a href="http://www.themevault.net/" target="_blank">ThemeVault.</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <a style="display: none" href="javascript:void(0);" class="scrollTop back-to-top" id="back-to-top">
+            <i class="fa fa-chevron-up"></i>
+        </a>
+    </body>
+</html> 

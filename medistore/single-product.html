@@ -1,0 +1,626 @@
+<!--Template Name: Medistore
+File Name: single-product.html
+Author Name: ThemeVault
+Author URI: http://www.themevault.net/
+License URI: http://www.themevault.net/license/-->
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
+        <link rel="icon" href="images/favicon.png"/>
+        <title>MediStore</title>
+        <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css"/>
+        <link rel="stylesheet" type="text/css" href="css/style.css"/> 
+        <link rel="stylesheet" type="text/css" href="font-awesome/css/font-awesome.min.css"/>
+        <script src="js/jquery.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/custom.js"></script>
+    </head>
+    <body>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 col-sm-4 col-xs-4" id="logo" >
+                    <a href="home.html" class="logo-text">
+                        Medi<span style="color:#39BAF0; font-size:40px">STORE</span>
+                    </a>		
+                </div>
+                <div class="col-md-2 col-sm-12 col-xs-12" style="display:none " id="navbar_hide" >
+                    <nav  role="navigation" class="navbar navbar-inverse">
+                        <a href="home.html" style="float: left" class="logo-text">
+                            Medi<span style="color:#39BAF0; font-size:40px">STORE</span>
+                        </a>
+                        <div id="nav">
+                            <div class="navbar-header">
+                                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar" style="background: #8EBE08; border: none; margin-right: 0">
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                </button>
+                            </div>
+                            <div class="collapse navbar-collapse" id="myNavbar">
+                                <ul class="nav navbar-nav site_nav_menu1"  >
+                                    <li class="first " ><a href="home.html">Home</a></li>
+                                    <li><a href="#">About us</a></li>
+                                    <li><a href="#">Guarantee</a></li>
+                                    <li><a href="#">Disclaimer</a></li>
+                                    <li><a href="#">Shipping & Payment</a></li>
+                                    <li><a href="#">Privacy Policy</a></li>
+                                    <li><a href="#">Terms & Conditions</a></li>
+                                    <li><a href="#">Contact Us</a></li>
+                                    <li><a href="#">Site Map</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </nav>
+                </div>
+                <div class="col-md-4 col-md-offset-4 col-sm-offset-2  col-sm-6 col-xs-12" >
+                    <div id="top_right">
+                        <div id="cart">
+                            <div class="text">
+                                <div class="img">
+                                    <a href="cart.html"> <img class="img-responsive" src="images/cart.png" alt="" title="" width="26" height="27" /></a>
+                                </div><span>Your cart:</span><span class="cart_total">€0.00</span><span class="cart_items">(0 items)</span>
+                            </div> 
+                        </div>
+                        <div id="bottom_right">
+                            <div class="row">
+                                <div class="col-md-6 col-xs-6 wd_auto">
+                                    <div class="left">
+                                        <div class="login">
+                                            <a class="btn btn-default reg_button" href="login.html">Login</a> 
+                                            <a class="btn btn-default reg_button" href="register.html">Signup</a>
+                                        </div>			
+                                    </div>
+                                </div> 
+                                <div class="dropdown-bn wd-33 col-md-6 remove_PL col-xs-6">
+                                    <div class="row">
+                                        <div class="pl-0 col-md-6 col-xs-6">
+
+                                            <div class="dropdown btn-group">
+                                                <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">language
+                                                    <span class="caret"></span></button>
+                                                <ul class="dropdown-menu">
+                                                    <li><a href="#">English</a></li>
+                                                    <li><a href="#">French</a></li>
+                                                    <li><a href="#">German</a></li>
+                                                    <li><a href="#">Dutch</a></li>
+                                                    <li><a href="#">Swedish</a></li>
+                                                    <li><a href="#">Danish</a></li>
+                                                    <li><a href="#">Portuguese</a></li>
+                                                    <li><a href="#">Finish</a></li>
+                                                    <li><a href="#">German</a></li><li><a href="#">Norwegian</a></li>
+
+                                                </ul>
+                                            </div>
+                                        </div>
+
+                                        <div class="pl_0 col-md-6 col-xs-6">
+                                            <div class="dropdown btn-group">
+                                                <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">currency
+                                                    <span class="caret"></span></button>
+                                                <ul class="dropdown-menu">
+                                                    <li><a href="#">U.S. Dollar</a></li>
+                                                    <li><a href="#">Euro</a></li>
+                                                    <li><a href="#">Pounds Sterling</a></l>
+                                                </ul>
+                                            </div>
+                                        </div>
+
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div> 
+        <div class="container-fluid bg-color">
+            <div class="row">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12 col-xs-12">
+                            <nav  role="navigation" class="navbar navbar-inverse" id="nav_show">
+                                <div id="nav">
+                                    <div class="navbar-header">
+                                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                                            <span class="icon-bar"></span>
+                                            <span class="icon-bar"></span>
+                                            <span class="icon-bar"></span>
+                                        </button>
+
+                                    </div>
+                                    <div class="collapse navbar-collapse" id="myNavbar">
+                                        <ul class="nav navbar-nav site_nav_menu1"  >
+                                            <li class="first "><a href="home.html">Home</a></li>
+                                            <li><a href="#">About us</a></li>
+                                            <li><a href="#">Guarantee</a></li>
+                                            <li><a href="#">Disclaimer</a></li>
+                                            <li><a href="#">Shipping & Payment</a></li>
+                                            <li><a href="#">Privacy Policy</a></li>
+                                            <li><a href="#">Terms & Conditions</a></li>
+                                            <li><a href="#">Contact Us</a></li>
+                                            <li><a href="#">Site Map</a></li>
+                                        </ul>
+
+                                    </div>
+                                </div>
+                            </nav>
+                        </div>
+                    </div> 
+
+                </div>
+            </div>
+        </div>
+        <div class="container" >
+            <div class="row" id="search_manu" style="margin-top: 10px">
+                <div class="col-md-6 col-xs-12">
+                    <form  name="quick_find">
+                        <div class="form-group">
+                            <div class="input-group">
+                                <input type="text" placeholder="Enter search keywords here" class="form-control input-lg" id="inputGroup"/>
+                                <span class="input-group-addon">
+                                    <a href="#" style="color:white">Search</a>
+                                </span>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="col-md-6 col-xs-12">
+
+                    <form  name="manufacturers"> 
+                        <div class="form-group">
+                            <div class="">
+                                <select  style="font-size: 14px; background: #EAEAEA; border: none;" name="manufacturers_id"  size="1" class="input-lg form-control arrow-hide date_class">
+                                    <option value="" selected="selected">Please Select manufacturers</option>
+                                    <option>lorem</option>
+                                    <option>lorem</option>
+                                    <option>lorem</option>
+                                    <option>lorem</option>
+                                </select>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <div id="site_content">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-3 col-sm-4 col-xs-12 left_sidebar1">
+                        <div id="left_part">
+                            <div class="bs-example">
+                                <div class="panel-group" id="accordion">
+                                    <div class="panel panel-default">
+                                        <div class="panel-heading">
+                                            <div class="infoBoxHeading">
+                                                <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne">Categories</a>
+                                                <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne">
+                                                    <i  id="accordan_plus" class="indicator glyphicon glyphicon-chevron-down  pull-right"></i>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div id="collapseOne" class="panel-collapse collapse in">
+                                            <div class="panel-body">
+                                                <div class="infoBoxContents">
+                                                    <a href="product.html">Category One</a>&nbsp;(94)<br />
+                                                    <a href="product.html">Category Two</a>&nbsp;(9)<br />
+                                                    <a href="product.html">Category Three</a>&nbsp;(5)<br />
+                                                    <a href="product.html">Category Four</a>&nbsp;(6)<br />
+                                                    <a href="product.html">Category Five</a>&nbsp;(94)<br />
+                                                    <a href="product.html">Category Six</a>&nbsp;(94)<br />
+                                                    <a href="product.html">Category Seven</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="panel panel-default">
+                                        <div class="panel-heading">
+                                            <div class="infoBoxHeading">
+                                                <a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">What's New?</a>
+                                                <a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">
+                                                    <i id="accordan_plus" class="indicator glyphicon glyphicon-chevron-up  pull-right accordan_plus"></i>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div id="collapseTwo" class="panel-collapse collapse">
+                                            <div class="panel-body">
+                                                <div class="infoBoxContainer">  
+                                                    <div class="infoBoxHeading">
+                                                        <a href="#">What's New?</a>
+                                                    </div> 
+                                                    <div class="infoBoxContents" id="sidebar">
+                                                        <div>
+                                                            <a href="single-product.html">
+                                                                <img src="images/img4.jpg"  class="img-responsive" />
+                                                            </a>
+                                                        </div>
+                                                        <a href="single-product.html">Lorem Simply</a><br />€21.00
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="panel panel-default">
+                                        <div class="panel-heading">
+                                            <div class="infoBoxHeading">
+                                                <a data-toggle="collapse" data-parent="#accordion" href="#collapseThree">Information</a>
+                                                <a data-toggle="collapse" data-parent="#accordion" href="#collapseThree">
+                                                    <i id="accordan_plus" class="indicator glyphicon glyphicon-chevron-up  pull-right"></i>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div id="collapseThree" class="panel-collapse collapse">
+                                            <div class="panel-body">
+                                                <div class="infoBoxContents">    
+                                                    <a href="#">Shipping &amp; Returns</a><br />   
+                                                    <a href="#">Privacy Notice</a><br />   
+                                                    <a href="#">Conditions of Use</a><br />   
+                                                    <a href="#">Contact Us</a> 
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="panel panel-default">
+                                        <div class="panel-heading">
+                                            <div class="infoBoxHeading">
+                                                <a data-toggle="collapse" data-parent="#accordion" href="#collapseFour">Bestsellers</a>
+                                                <a data-toggle="collapse" data-parent="#accordion" href="#collapseFour">
+                                                    <i id="accordan_plus" class="indicator glyphicon glyphicon-chevron-up  pull-right"></i>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div id="collapseFour" class="panel-collapse collapse">
+                                            <div class="panel-body">
+                                                <div class="infoBoxContents" id="sidebar">
+                                                    <a href="single-product.html">
+                                                        <img src="images/img4.jpg"  class="img-responsive" />
+                                                    </a>
+                                                    <a href="single-product.html">Lorem Big Block</a><br /><del></del>
+                                                    <span class="productSpecialPrice">€21.00</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="panel panel-default">
+                                        <div class="panel-heading">
+                                            <div class="infoBoxHeading">
+                                                <a data-toggle="collapse" data-parent="#accordion" href="#collapseFive">Specials</a>
+                                                <a data-toggle="collapse" data-parent="#accordion" href="#collapseFive">
+                                                    <i id="accordan_plus" class="indicator glyphicon glyphicon-chevron-up  pull-right"></i>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div id="collapseFive" class="panel-collapse collapse">
+                                            <div class="panel-body">
+
+                                                <div class="infoBoxContents" id="sidebar">
+
+                                                    <a href="single-product.html">
+                                                        <img src="images/img6.jpg" class="img-responsive" />
+                                                    </a>
+                                                    <a href="single-product.html">Lorem Big Block</a><br /><del></del>
+                                                    <span class="productSpecialPrice">€21.00</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                            </div>
+                        </div>
+                        <script>
+                            function toggleChevron(e) {
+                                $(e.target)
+                                        .prev('.panel-heading')
+                                        .find("i.indicator")
+                                        .toggleClass('glyphicon-chevron-down glyphicon-chevron-up');
+                            }
+                            $('#accordion').on('hidden.bs.collapse', toggleChevron);
+                            $('#accordion').on('shown.bs.collapse', toggleChevron);
+                        </script>
+
+                    </div> 
+                    <div class="col-md-9 col-sm-8 col-xs-12" id="content">            
+                        <div class="breadcrumbs">
+                            <a href="home.html"><i class="fa fa-home"></i></a>
+                            <a href="">Lorem</a>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <ul class="thumbnails">
+                                    <li><a  href="#" class="thumbnail fix-box"><img class="changeimg" src="images/img21.jpg"></a></li>
+                                    <li class="image-additional"><a title="Dianabol"  class="thumbnail"> 
+                                            <img class="galleryimg" src="images/img21.jpg"></a></li>
+                                    <li class="image-additional"><a title="Proviron"  class="thumbnail"> 
+                                            <img class="galleryimg" src="images/img22.jpg"></a></li>
+                                </ul>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="btn-group">
+                                    <button  title="" class="btn btn-default mr_5"  type="button"><i class="fa fa-heart"></i></button>
+                                    <button  title="" class="btn btn-default"  type="button"><i class="fa fa-exchange"></i></button>
+                                </div>
+                                <h1 style="color: #39baf0">Lorem</h1>
+                                <ul class="list-unstyled product-section">
+                                    <li><span>Product Code:</span> SAM1</li>
+                                    <li><span>Reward Points:</span> 1000</li>
+                                    <li><span>Availability:</span> <span class="check-stock">Pre-Order</span></li>
+                                </ul>
+                                <ul class="list-unstyled">
+                                    <li>
+                                        <h2>€241.99</h2>
+                                    </li>
+                                    <li>Ex Tax: €199.99</li>
+                                </ul>
+                                <div id="product">
+                                    <div class="form-group">
+                                        <label for="input-quantity" class="control-label">Qty</label>
+                                        <input type="text" class="form-control" id="input-quantity" size="2" value="1" name="quantity">
+                                        <input type="hidden" value="49" name="product_id">
+                                        <br>
+                                        <a class="btn btn-primary btn-lg btn-block reg_button" href="cart.html"><i class="fa fa-shopping-cart"></i> BUY NOW!</a>
+                                    </div>
+                                </div>
+                                <div class="rating">
+                                    <p>
+                                        <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-1x"></i></span>
+                                        <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-1x"></i></span>
+                                        <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-1x"></i></span>
+                                        <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-1x"></i></span>
+                                        <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-1x"></i></span>
+                                        <a  href="">0 reviews</a> / <a  href="">Write a review</a></p>
+                                    <hr>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-xs-12">
+                                <ul class="nav nav-tabs">
+                                    <li class=""><a data-toggle="tab" href="#tab-description" aria-expanded="false">Description</a></li>
+                                    <li class="active"><a data-toggle="tab" href="#tab-review" aria-expanded="true">Reviews (0)</a></li>
+                                </ul>
+                                <div class="tab-content">
+                                    <div id="tab-description" class="tab-pane">
+                                        <div class="row ">
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur metus leo, dignissim vitae bibendum et, pretium id nulla. Nulla laoreet dapibus cursus. Sed rhoncus bibendum neque non varius. Sed cursus ex id imperdiet tincidunt. Vestibulum vel lacus vel lectus vulputate condimentum pharetra ac mauris. Vivamus dictum justo in est maximus, a pretium neque sodales.</p>
+                                        </div>
+                                    </div>
+                                    <div id="tab-review" class="tab-pane active">
+                                        <form id="form-review" class="form-horizontal">
+
+                                            <h2>Write a review</h2>
+                                            <div class="form-group required">
+                                                <div class="col-sm-12">
+                                                    <label for="input-name" class="control-label">Your Name</label>
+                                                    <input type="text" class="form-control" id="input-name" value="" name="name">
+                                                </div>
+                                            </div>
+                                            <div class="form-group required">
+                                                <div class="col-sm-12">
+                                                    <label for="input-review" class="control-label">Your Review</label>
+                                                    <textarea class="form-control" id="input-review" rows="5" name="text"></textarea>
+                                                    <div class="help-block"><span class="text-danger">Note:</span> HTML is not translated!</div>
+                                                </div>
+                                            </div>
+                                            <div class="form-group required">
+                                                <div class="col-sm-12">
+                                                    <label class="control-label">Rating</label>
+                                                    &nbsp;&nbsp;&nbsp; Bad&nbsp;
+                                                    <input type="radio" value="1" name="rating">
+                                                    &nbsp;
+                                                    <input type="radio" value="2" name="rating">
+                                                    &nbsp;
+                                                    <input type="radio" value="3" name="rating">
+                                                    &nbsp;
+                                                    <input type="radio" value="4" name="rating">
+                                                    &nbsp;
+                                                    <input type="radio" value="5" name="rating">
+                                                    &nbsp;Good</div>
+                                            </div>
+                                            <div class="buttons clearfix">
+                                                <div class="pull-right">
+                                                    <button class="btn btn-primary reg_button"  id="button-review" type="button">
+                                                        <i class="fa fa-caret-right"></i>&nbsp;
+                                                        Continue                                       
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="rel-product">
+                            <div class="infoBoxHeading">
+                                <a>Related Product</a>
+                            </div>
+                            <div class="row product-layout_width">
+                                <div class="product-layout col-md-4  col-sm-6 col-xs-12">
+                                    <div class="product-thumb-height">
+                                        <div class="product-thumb transition">
+                                            <ul>
+
+                                                <li class="li_product_image">
+                                                    <div class="image">
+                                                        <a href="single-product.html">
+                                                            <img src="images/img16.jpg"  class="img-responsive" width="200" height="200" />		
+                                                        </a>
+
+                                                    </div>
+                                                </li>
+                                                <li class="li_product_price">
+                                                    <span class="old_price1"></span>
+                                                    <span class="new_price1">€159.00</span>
+                                                    <span class="saving1"></span><li>
+                                                <li class="li_product_desc">
+                                                    <div class="caption">
+                                                        <p>
+                                                            Lorem Ipsum is simply dummy text of the printing
+                                                        </p>
+                                                    </div>
+                                                </li>
+                                                <li class="li_product_buy_button">
+                                                    <a class="btn btn-default" id="but" href="cart.html" role="button" >
+                                                        Buy Now!
+                                                    </a>
+                                                    <div class="pull-right">
+                                                        <button  type="button" class="btn btn-primary wish_button"><i class="fa fa-heart"></i></button>
+                                                        <button  type="button" class="btn btn-primary wish_button"><i class="fa fa-exchange"></i></button>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="product-layout col-md-4  col-sm-6 col-xs-12">
+                                    <div class="product-thumb-height">
+                                        <div class="product-thumb transition">
+                                            <ul>
+
+                                                <li class="li_product_image">
+                                                    <div class="image">
+                                                        <a href="single-product.html">
+                                                            <img src="images/d15.jpg"  class="img-responsive" width="200" height="200" />		
+                                                        </a>
+
+                                                    </div>
+                                                </li>
+                                                <li class="li_product_price">
+                                                    <span class="old_price1"></span>
+                                                    <span class="new_price1">€159.00</span>
+                                                    <span class="saving1"></span><li>
+                                                <li class="li_product_desc">
+                                                    <div class="caption">
+                                                        <p>
+                                                            Lorem Ipsum is simply dummy text of the printing
+                                                        </p>
+                                                    </div>
+                                                </li>
+                                                <li class="li_product_buy_button">
+                                                    <a class="btn btn-default" id="but" href="cart.html" role="button" >
+                                                        Buy Now!
+                                                    </a>
+                                                    <div class="pull-right">
+                                                        <button  type="button" class="btn btn-primary wish_button"><i class="fa fa-heart"></i></button>
+                                                        <button  type="button" class="btn btn-primary wish_button"><i class="fa fa-exchange"></i></button>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="product-layout col-md-4  col-sm-6 col-xs-12">
+                                    <div class="product-thumb-height">
+                                        <div class="product-thumb transition">
+                                            <ul>
+
+                                                <li class="li_product_image">
+                                                    <div class="image">
+                                                        <a href="single-product.html">
+                                                            <img src="images/d1.jpg"  class="img-responsive" width="200" height="200" />		
+                                                        </a>
+
+                                                    </div>
+                                                </li>
+                                                <li class="li_product_price">
+                                                    <span class="old_price1"></span>
+                                                    <span class="new_price1">€134.00</span>
+                                                    <span class="saving1"></span><li>
+                                                <li class="li_product_desc">
+                                                    <div class="caption">
+                                                        <p>
+                                                            Lorem Ipsum is simply dummy text of the printing
+                                                        </p>
+                                                    </div>
+                                                </li>
+                                                <li class="li_product_buy_button">
+                                                    <a class="btn btn-default" id="but" href="cart.html" role="button" >
+                                                        Buy Now!
+                                                    </a>
+                                                    <div class="pull-right">
+                                                        <button  type="button" class="btn btn-primary wish_button"><i class="fa fa-heart"></i></button>
+                                                        <button  type="button" class="btn btn-primary wish_button"><i class="fa fa-exchange"></i></button>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <div id="footer1">
+            <div class="container-fluid footer-background">
+                <div class="row">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-2 col-sm-3 col-xs-12 txt-center">
+                                <a href="home.html">
+                                    <span class="logo-text">DRUGSTORE</span>
+                                </a>
+                            </div>
+                            <div class="col-md-7 col-sm-6 col-xs-12">
+                                <div id="footer_menu">
+                                    <a href="home.html">Home</a> | 
+                                    <a href="#">About Us</a> | 
+                                    <a href="#">Disclaimer</a> | 
+                                    <a href="#">Guarantee</a> | 
+                                    <a href="#">Shipping & Payment</a> | 
+                                    <a href="#">Privacy Policy</a> <br class="disable_content" />
+                                    <a href="#">Terms & Conditions</a> | 
+                                    <a href="#">Contact Us</a> | 
+                                    <a href="#">Site Map<span></span></a>
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-sm-3 col-xs-12">
+                                <div id="social_icons" class="pull-right">
+                                    <a href="#" class="btn btn-default reg_button"><i class="fa fa-facebook"></i></a>
+                                    <a href="#" class="btn btn-default reg_button"><i class="fa fa-twitter"></i></a>
+                                    <a href="#" class="btn btn-default reg_button"><i class="fa fa-yahoo"></i></a>
+                                    <a href="#" class="btn btn-default reg_button"><i class="fa fa-envelope"></i></a>
+                                    <a href="#" class="btn btn-default reg_button"><i class="fa fa-linkedin"></i></a>	
+                                </div>
+                            </div>
+                            <div class="col-md-12 col-sm-12 col-xs-12">
+                                <div class="copyright">
+                                    <!--Do not remove Backlink from footer of the template. To remove it you can purchase the Backlink !-->
+                                    © 2017 All right reserved. Designed by
+                                    <a href="http://www.themevault.net/" target="_blank">ThemeVault.</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <a style="display: none" href="javascript:void(0);" class="scrollTop back-to-top" id="back-to-top">
+            <i class="fa fa-chevron-up"></i>
+        </a>
+        <script>
+            $("document").ready(function () {
+
+                $(".galleryimg").on("click", function () {
+                    var src = $(this).attr('src');
+                    console.log(src)
+                    $(".changeimg").attr('src', src);
+                });
+            });
+        </script>
+    </body>
+</html> 
